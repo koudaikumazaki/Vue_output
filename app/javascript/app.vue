@@ -1,16 +1,11 @@
 <template>
   <div id="app">
-    <ul>
-      <li v-for="memo in memos" :key="memo.id">
-        {{ memo.title }}： {{ memo.description }}
-      </li>
-    </ul>
+    <p>{{ memos }}</p>
   </div>
 </template>
 
 <script>
 import axios from 'axios';
-
 export default {
   data: function () {
     return {
